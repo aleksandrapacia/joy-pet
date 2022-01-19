@@ -24,11 +24,11 @@ class JoyPet(MDApp):
         scroll.add_widget(list_view)
 
         for i in range(101):
-            image = IconLeftWidget(source="bomb")
+            icon = IconLeftWidget(icon="bomb")
             items = ThreeLineAvatarListItem(text="Item " + str(i), secondary_text="jest to item nr" + " " + str(i),
                                             tertiary_text="and this is the third text")
             list_view.add_widget(items)
-            items.add_widget(image)
+            items.add_widget(icon)
 
         screen.add_widget(scroll)
 
