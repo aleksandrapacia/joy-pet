@@ -1,18 +1,23 @@
 screen_management = """
 ScreenManager:
-    MenuScreen:
-    LoginScreen:
+    MainButtonScr:
+    MainScreen:
 
-<MenuScreen>:
-    name: 'menu'
+<MainButtonScr>:
+    name: 'menubtn'
     MDRectangleFlatButton:
         text: 'Menu'
         pos_hint: {'center_x':0.5,'center_y':0.5}
+        on_press: root.manager.current = 'menu'
 
-<LoginScreen>:
-    name: 'login'
+<MainScreen>:
+    name: 'menu'
+    MDLabel:
+        text: 'Welcome Ola!'
+        halign: 'center' 
     MDRectangleFlatButton:
-        text: 'Log in'
-        pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+        text: 'Back'
+        pos_hint: {'center_x':0.5,'center_y':0.4}
+        on_press: root.manager.current = 'menubtn'
 
 """
