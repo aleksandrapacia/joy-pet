@@ -11,10 +11,14 @@ class MainButtonScr(Screen):
 class MainScreen(Screen):
     pass
 
+class UpdatesScreen(Screen):
+    pass
+
 
 sm = ScreenManager()
-sm.add_widget(MainButtonScr(name='menubtn'))
-sm.add_widget(MainScreen(name='menu'))
+sm.add_widget(MainButtonScr(name='mainbtn'))
+sm.add_widget(MainScreen(name='main'))
+sm.add_widget(UpdatesScreen(name='updatescreen'))
 
 
 class JoyPet(MDApp):
