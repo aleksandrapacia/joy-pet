@@ -8,7 +8,7 @@ class MainButtonScr(Screen):
     pass
 
 
-class MainScreen(Screen):
+class MenuScreen(Screen):
     pass
 
 class UpdatesScreen(Screen):
@@ -17,7 +17,7 @@ class UpdatesScreen(Screen):
 
 sm = ScreenManager()
 sm.add_widget(MainButtonScr(name='mainbtn'))
-sm.add_widget(MainScreen(name='main'))
+sm.add_widget(MenuScreen(name='menu'))
 sm.add_widget(UpdatesScreen(name='updatescreen'))
 
 
