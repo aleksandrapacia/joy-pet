@@ -45,5 +45,11 @@ ScreenManager:
         pos_hint: {'center_x':0.5,'center_y':0.4}
         on_press: root.manager.current = 'mainbtn'
     
+<LoginScreen>:
+    name: 'loginscreen'
+    MDLabel:
+        text: 'check'
+        halign: 'center'
 
+        
 """
