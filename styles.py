@@ -3,6 +3,7 @@ ScreenManager:
     MainButtonScr:
     MenuScreen:
     UpdatesScreen:
+    LoginScreen:
 
 <MainButtonScr>:
     name: 'mainbtn'
@@ -17,9 +18,12 @@ ScreenManager:
     MDLabel:
         text: 'JoyPet'
         pos_hint: {'center_x': 0.97, 'center_y': 0.9}
-        text_style: 'h1'
+        text_size: (100,500)
+    MDRectangleFlatButton:
+        text: 'Login'
+        pos_hint: {'center_x':0.5,'center_y':0.3}
+        on_press: root.manager.current = 'loginscreen'
 
-        
 
 <MenuScreen>:
     name: 'menu'

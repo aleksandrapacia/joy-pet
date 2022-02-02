@@ -14,11 +14,14 @@ class MenuScreen(Screen):
 class UpdatesScreen(Screen):
     pass
 
+class LoginScreen(Screen):
+    pass
 
 sm = ScreenManager()
 sm.add_widget(MainButtonScr(name='mainbtn'))
 sm.add_widget(MenuScreen(name='menu'))
 sm.add_widget(UpdatesScreen(name='updatescreen'))
+sm.add_widget(LoginScreen(name='loginscreen'))
 
 
 class JoyPet(MDApp):
@@ -26,7 +29,6 @@ class JoyPet(MDApp):
     def build(self):
         screen = Builder.load_string(screen_management)
         return screen
-
 
 JoyPet().run()
 
