@@ -52,16 +52,19 @@ ScreenManager:
     name: 'loginscreen'
     MDTextField:
         mode: 'rectangle'
-        pos_hint: {'center_x':0.5,'center_y':0.7}
+        pos_hint:{'center_x': 0.5, 'center_y': 0.6}
+        size_hint_x:None
+        width: 250
         hint_text: 'Enter username'
-        size_hint: (.3, .1)
     MDTextField:
         text: 'Enter password'
         pos_hint: {'center_x':0.5,'center_y':0.2}
     MDLabel:
+        pos_hint:{'x':0.3, 'center_y':0.2}
         text: 'Login'
-        pos_hint: {'center_x': .9, 'center_y': .9}
+        pos_hint: {'center_x': 0.5, 'center_y': 0.9}
         theme_text_color: 'Primary'
         font_style: 'H1'
+        halign: 'center'
         
 """
