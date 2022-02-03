@@ -59,10 +59,9 @@ ScreenManager:
         text: 'Enter password'
         pos_hint: {'center_x':0.5,'center_y':0.2}
     MDLabel:
-        text: "hi"
-        font_size: 50
-        markup: True
-        valign: 'top'
-        color: 0,0,0,1
+        text: 'Login'
+        pos_hint: {'center_x': .9, 'center_y': .9}
+        theme_text_color: 'Primary'
+        font_style: 'H1'
         
 """
