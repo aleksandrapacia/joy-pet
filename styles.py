@@ -47,9 +47,13 @@ ScreenManager:
     
 <LoginScreen>:
     name: 'loginscreen'
-    MDLabel:
-        text: 'check'
-        halign: 'center'
+    MDTextField:
+        text: 'Enter a username'
+        pos_hint: {'center_x':0.5,'center_y':0.4}
+    MDTextField:
+        text: 'Enter password'
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        size_hint: (0.5, 1)
 
         
 """
