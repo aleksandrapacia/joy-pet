@@ -17,12 +17,14 @@ ScreenManager:
         on_press: root.manager.current = 'updatescreen'
     MDLabel:
         text: 'JoyPet'
-        pos_hint: {'center_x': 0.97, 'center_y': 0.9}
-        text_size: (100,500)
+        font_size: '100sp'
+        bold: True
+        italic: True
     MDRectangleFlatButton:
         text: 'Login'
         pos_hint: {'center_x':0.5,'center_y':0.3}
         on_press: root.manager.current = 'loginscreen'
+
 
 
 <MenuScreen>:
@@ -40,6 +42,7 @@ ScreenManager:
     MDLabel:
         text: 'Looking for updates ...'
         halign: 'center'
+
     MDRectangleFlatButton:
         text: 'Back'
         pos_hint: {'center_x':0.5,'center_y':0.4}
@@ -55,5 +58,11 @@ ScreenManager:
     MDTextField:
         text: 'Enter password'
         pos_hint: {'center_x':0.5,'center_y':0.2}
+    MDLabel:
+        text: "hi"
+        font_size: 50
+        markup: True
+        valign: 'top'
+        color: 0,0,0,1
         
 """
