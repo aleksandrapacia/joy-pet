@@ -48,12 +48,12 @@ ScreenManager:
 <LoginScreen>:
     name: 'loginscreen'
     MDTextField:
-        text: 'Enter a username'
-        pos_hint: {'center_x':0.5,'center_y':0.4}
+        mode: 'rectangle'
+        pos_hint: {'center_x':0.5,'center_y':0.7}
+        hint_text: 'Enter username'
+        size_hint: (.3, .1)
     MDTextField:
         text: 'Enter password'
         pos_hint: {'center_x':0.5,'center_y':0.2}
-        size_hint: (0.5, 1)
-
         
 """
