@@ -28,7 +28,6 @@ ScreenManager:
         on_press: root.manager.current = 'loginscreen'
 
 
-
 <MenuScreen>:
     name: 'menu'
     MDLabel:
@@ -42,8 +41,12 @@ ScreenManager:
 <UpdatesScreen>:
     name: 'updatescreen'
     MDLabel:
-        text: 'Looking for updates ...'
+        text: 'Updates'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+        font_size: '100sp'
         halign: 'center'
+        italic: True
+        bold: True
 
     MDRectangleFlatButton:
         text: 'Back'
@@ -57,6 +60,7 @@ ScreenManager:
         hint_text: 'Enter username'
         pos_hint:{'center_x': 0.5, 'center_y': 0.6}
         size_hint_x:None
+        
         width: 250
     MDTextField:
         mode: 'rectangle'
@@ -67,14 +71,13 @@ ScreenManager:
     MDLabel:
         text: 'Login'
         pos_hint: {'center_x': 0.5, 'center_y': 0.9}
-        theme_text_color: 'Primary'
-        font_style: 'H2'
+        font_size: '100sp'
         halign: 'center'
+        italic: True
+        bold: True
     MDRectangleFlatButton:
         text: 'Back'
         pos_hint: {'center_x':0.5,'center_y':0.3}
-        text_color: 1, 0, 0, 1
-        line_color: 0, 0, 1, 1
         on_press: root.manager.current = 'mainbtn'
         
         

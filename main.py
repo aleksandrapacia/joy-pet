@@ -28,8 +28,10 @@ class JoyPet(MDApp):
 
     def build(self):
         screen = Builder.load_string(screen_management)
-        self.theme_cls.primary_palette = 'DeepOrange'
         self.title = 'JoyPet'
+        self.theme_cls.primary_palette = "DeepOrange"
+        self.theme_cls.primary_hue = "500"
+        self.theme_cls.theme_style = "Light"
         return screen
 
 JoyPet().run()
