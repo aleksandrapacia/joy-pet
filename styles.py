@@ -1,14 +1,14 @@
 screen_management = """
 ScreenManager:
-    MainButtonScr:
+    Start:
     MenuScreen:
     UpdatesScreen:
     LoginScreen:
 
-<MainButtonScr>:
+<Start>:
     name: 'mainbtn'
     MDRectangleFlatButton:
-        text: 'Menu'
+        text: 'Start'
         pos_hint: {'center_x':0.5,'center_y':0.5}
         on_press: root.manager.current = 'menu'
     MDRectangleFlatButton:
@@ -17,9 +17,11 @@ ScreenManager:
         on_press: root.manager.current = 'updatescreen'
     MDLabel:
         text: 'JoyPet'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.9}
         font_size: '100sp'
-        bold: True
+        halign: 'center'
         italic: True
+        bold: True
     MDRectangleFlatButton:
         text: 'Login'
         pos_hint: {'center_x':0.5,'center_y':0.3}
@@ -62,12 +64,20 @@ ScreenManager:
         pos_hint: {'center_x':0.5,'center_y':0.45}
         size_hint_x:None
         width:250
-        
     MDLabel:
         text: 'Login'
         pos_hint: {'center_x': 0.5, 'center_y': 0.9}
         theme_text_color: 'Primary'
         font_style: 'H2'
         halign: 'center'
+    MDRectangleFlatButton:
+        text: 'Back'
+        pos_hint: {'center_x':0.5,'center_y':0.3}
+        text_color: 1, 0, 0, 1
+        line_color: 0, 0, 1, 1
+        on_press: root.manager.current = 'mainbtn'
+        
         
 """
+
+#TODO: make from back screens icons with arrows in the right up angle
