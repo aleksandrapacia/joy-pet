@@ -17,6 +17,7 @@ class UpdatesScreen(Screen):
 class LoginScreen(Screen):
     pass
 
+
 sm = ScreenManager()
 sm.add_widget(Start(name='mainbtn'))
 sm.add_widget(MenuScreen(name='menu'))
@@ -31,7 +32,12 @@ class JoyPet(MDApp):
         self.title = 'JoyPet'
         self.theme_cls.primary_palette = "DeepOrange"
         self.theme_cls.primary_hue = "500"
-        self.theme_cls.theme_style = "Light"
+
         return screen
+
+    @staticmethod
+    def navigation_draw():
+        print("NavBar")
+
 
 JoyPet().run()

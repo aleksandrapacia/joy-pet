@@ -37,6 +37,14 @@ ScreenManager:
         text: 'Back'
         pos_hint: {'center_x':0.5,'center_y':0.4}
         on_press: root.manager.current = 'mainbtn'
+    BoxLayout:
+        MDBottomAppBar:
+            MDToolbar:
+                title: 'Demo'
+                icon: 'back'
+                type: 'bottom'
+                left_action_items: [["python-language", lambda x: app.navigation_draw()]]
+                on_action_button: app.navigation_draw()
         
 <UpdatesScreen>:
     name: 'updatescreen'
@@ -79,8 +87,10 @@ ScreenManager:
         text: 'Back'
         pos_hint: {'center_x':0.5,'center_y':0.3}
         on_press: root.manager.current = 'mainbtn'
-        
-        
+
+    
 """
 
-#TODO: make from back screens icons with arrows in the right up angle
+
+
+
