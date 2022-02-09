@@ -40,11 +40,11 @@ ScreenManager:
     BoxLayout:
         MDBottomAppBar:
             MDToolbar:
-                title: 'Demo'
-                icon: 'back'
+                icon: 'bed'
                 type: 'bottom'
-                left_action_items: [["python-language", lambda x: app.navigation_draw()]]
+                left_action_items: [["language-python", lambda x: app.navigation_draw()]]
                 on_action_button: app.navigation_draw()
+
         
 <UpdatesScreen>:
     name: 'updatescreen'
