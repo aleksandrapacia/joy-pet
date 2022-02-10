@@ -1,16 +1,19 @@
+#import NavigationLayout kivymd.navigationdrawer.NavigationLayout
+
 screen_management = """
 ScreenManager:
     Start:
     MenuScreen:
     UpdatesScreen:
     LoginScreen:
+    NavigationLayout:
 
 <Start>:
     name: 'mainbtn'
     MDRectangleFlatButton:
         text: 'Start'
         pos_hint: {'center_x':0.5,'center_y':0.5}
-        on_press: root.manager.current = 'menu'
+        on_press: root.manager.current = 'nav_l'
     MDRectangleFlatButton:
         text: 'Upload'
         pos_hint: {'center_x':0.5,'center_y':0.4}
@@ -80,21 +83,12 @@ ScreenManager:
         pos_hint: {'center_x':0.5,'center_y':0.3}
         on_press: root.manager.current = 'mainbtn'
 
+<NavigationLayout>:
+    name: 'nav_l'
+    MDNavigationDrawer:
     
-"""
-
-nav_drawer ="""
-Screen:
-    NavigationLayout:
-        ScreenManager:
-            Screen:
-                BoxLayout:
-                    orientation: 'vertical'
-                    MDToolbar:
-                        title: "Navigation Drawer"
-                        elevation: 10
-                        left_action_items: [['menu', lambda x: nav_drawer.toggle_nav_drawer()]]
-                    Widget:
-        MDNavigationDrawer:
-            id: nav_drawer
+    Button: 
+        text: 'menu'
+    
+     
 """
