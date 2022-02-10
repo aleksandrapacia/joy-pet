@@ -35,8 +35,7 @@ class JoyPet(MDApp):
 
         return screen
 
-    @staticmethod
-    def navigation_draw():
+    def navigation_draw(self):
         print("NavBar")
 
 

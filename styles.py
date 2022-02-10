@@ -31,21 +31,13 @@ ScreenManager:
 <MenuScreen>:
     name: 'menu'
     MDLabel:
-        text: 'Welcome Ola!'
-        halign: 'center' 
-    MDRectangleFlatButton:
-        text: 'Back'
-        pos_hint: {'center_x':0.5,'center_y':0.4}
-        on_press: root.manager.current = 'mainbtn'
-    BoxLayout:
-        MDBottomAppBar:
-            MDToolbar:
-                icon: 'bed'
-                type: 'bottom'
-                left_action_items: [["language-python", lambda x: app.navigation_draw()]]
-                on_action_button: app.navigation_draw()
-
+        text: 'Menu'
+        font_size: '100sp'
+        halign: 'center'
+        italic: True
+        bold: True
         
+
 <UpdatesScreen>:
     name: 'updatescreen'
     MDLabel:
@@ -91,6 +83,18 @@ ScreenManager:
     
 """
 
-
-
-
+nav_drawer ="""
+Screen:
+    NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+                    MDToolbar:
+                        title: "Navigation Drawer"
+                        elevation: 10
+                        left_action_items: [['menu', lambda x: nav_drawer.toggle_nav_drawer()]]
+                    Widget:
+        MDNavigationDrawer:
+            id: nav_drawer
+"""
