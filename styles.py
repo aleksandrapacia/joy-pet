@@ -88,5 +88,10 @@ ScreenManager:
                     Widget:
         MDNavigationDrawer:
             id: nav_drawer
+            BoxLayout:
+                orientation: 'vertical'
+                MDLabel: 
+                    text: 'ola'
+                    font_style: 'H1'
 
 """
