@@ -2,6 +2,7 @@ from kivymd.app import MDApp
 from kivy.lang.builder import Builder
 from styles import *
 from kivy.uix.screenmanager import ScreenManager, Screen
+from kivymd.theming import ThemeManager
 
 
 class Start(Screen):
@@ -17,21 +18,18 @@ class UpdatesScreen(Screen):
 class LoginScreen(Screen):
     pass
 
-class NavigationLayout(Screen):
-    pass
-
 
 sm = ScreenManager()
 sm.add_widget(Start(name='mainbtn'))
-sm.add_widget(MenuScreen(name='menu'))
+sm.add_widget(MenuScreen(name='nav_l'))
 sm.add_widget(UpdatesScreen(name='updatescreen'))
 sm.add_widget(LoginScreen(name='loginscreen'))
-sm.add_widget(NavigationLayout(name='nav_l'))
 
 
 class JoyPet(MDApp):
 
     def build(self):
+        theme_cls = ThemeManager
         screen = Builder.load_string(screen_management)
         self.title = 'JoyPet'
         self.theme_cls.primary_palette = "DeepOrange"

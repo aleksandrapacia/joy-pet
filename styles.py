@@ -1,4 +1,3 @@
-#import NavigationLayout kivymd.navigationdrawer.NavigationLayout
 
 screen_management = """
 ScreenManager:
@@ -6,7 +5,8 @@ ScreenManager:
     MenuScreen:
     UpdatesScreen:
     LoginScreen:
-    NavigationLayout:
+    
+
 
 <Start>:
     name: 'mainbtn'
@@ -30,16 +30,6 @@ ScreenManager:
         pos_hint: {'center_x':0.5,'center_y':0.3}
         on_press: root.manager.current = 'loginscreen'
 
-
-<MenuScreen>:
-    name: 'menu'
-    MDLabel:
-        text: 'Menu'
-        font_size: '100sp'
-        halign: 'center'
-        italic: True
-        bold: True
-        
 
 <UpdatesScreen>:
     name: 'updatescreen'
@@ -83,12 +73,20 @@ ScreenManager:
         pos_hint: {'center_x':0.5,'center_y':0.3}
         on_press: root.manager.current = 'mainbtn'
 
-<NavigationLayout>:
+<MenuScreen>:
     name: 'nav_l'
-    MDNavigationDrawer:
-    
-    Button: 
-        text: 'menu'
-    
-     
+    Screen:
+    MDNavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+                    MDToolbar:
+                        title: "Navigation Drawer"
+                        elevation: 10
+                        left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
+                    Widget:
+        MDNavigationDrawer:
+            id: nav_drawer
+
 """
