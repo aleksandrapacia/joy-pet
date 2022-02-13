@@ -111,32 +111,26 @@ ScreenManager:
                 id: nav_drawer
                 ContentNavigationDrawer:
                     orientation: 'vertical'
-    
-    
+                    
                     Image:
                         id: avatar
                         source: 'profile_img.png'
                         
-                    MDLabel:
-                        text: "test"
-                        font_style: "Subtitle1"
-                        size_hint_y: None
-                        height: self.texture_size[1]
-                    
-                ScrollView:
-                    DrawerList:
-                        id: md_list
-                        MDList:
-                            OneLineListItem:
-                                text: "Screen 1"
-                                on_press:
-                                    nav_drawer.set_state("close")
-                                    screen_manager.current = "screen1"
-                            OneLineListItem:
-                                text: "Screen 2"
-                                on_press:
-                                    nav_drawer.set_state("close")
-                                    screen_manager.current = "screen2"
+    
+                    ScrollView:
+                        DrawerList:
+                            id: md_list
+                            MDList:
+                                OneLineListItem:
+                                    text: "Screen 1"
+                                    on_press:
+                                        nav_drawer.set_state("close")
+                                        screen_manager.current = "screen1"
+                                OneLineListItem:
+                                    text: "Screen 2"
+                                    on_press:
+                                        nav_drawer.set_state("close")
+                                        screen_manager.current = "screen2"
                 
     
           

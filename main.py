@@ -50,5 +50,8 @@ class JoyPet(MDApp):
     def navigation_draw(self):
         print("NavBar")
 
+    def on_start(self):
+        pass
+
 
 JoyPet().run()
