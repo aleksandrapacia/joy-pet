@@ -3,6 +3,9 @@ from kivy.lang.builder import Builder
 from styles import *
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivymd.theming import ThemeManager
+from kivy.uix.boxlayout import BoxLayout
+from kivymd.uix.list import MDList
+from kivymd.theming import ThemableBehavior
 
 
 class Start(Screen):
@@ -19,7 +22,6 @@ class LoginScreen(Screen):
     pass
 
 
-
 sm = ScreenManager()
 sm.add_widget(Start(name='mainbtn'))
 sm.add_widget(MenuScreen(name='nav_l'))
@@ -28,6 +30,13 @@ sm.add_widget(LoginScreen(name='loginscreen'))
 
 
 class JoyPet(MDApp):
+
+    class ContentNavigationDrawer(BoxLayout):
+        pass
+
+    class DrawerList(ThemableBehavior, MDList):
+        pass
+
 
     def build(self):
         theme_cls = ThemeManager

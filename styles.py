@@ -76,51 +76,69 @@ ScreenManager:
 <MenuScreen>:
     name: 'nav_l'
     Screen:
-    MDNavigationLayout:
-    
-        ScreenManager:
+        MDNavigationLayout:
         
-            Screen:
+            ScreenManager:
             
-                BoxLayout:
-                    orientation: 'vertical'
-                    
-                    MDToolbar:
-                        title: "Navigation Drawer"
-                        elevation: 10
-                        left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
+                Screen:
+                
+                    BoxLayout:
+                        orientation: 'vertical'
                         
-                    ScreenManager:
+                        MDToolbar:
+                            title: "Navigation Drawer"
+                            elevation: 10
+                            left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
+                            
+                            
+                        ScreenManager:
+                        
+                            id: screen_manager
+                            Screen:
+                                name: "screen1"
+                                MDLabel:
+                                    text: "Screen 1"
+                                    
+                            Screen:
+                                name: "screen2"
+                                MDLabel:
+                                    text: "Screen 2"
+                                    
+                                    
+                        Widget:
+                        
+            MDNavigationDrawer:
+                id: nav_drawer
+                ContentNavigationDrawer:
+                    orientation: 'vertical'
+    
+    
+                    Image:
+                        id: avatar
+                        source: 'profile_img.png'
+                        
+                    MDLabel:
+                        text: "test"
+                        font_style: "Subtitle1"
+                        size_hint_y: None
+                        height: self.texture_size[1]
                     
-                        id: screen_manager
-                        Screen:
-                            name: "screen1"
-                            MDLabel:
+                ScrollView:
+                    DrawerList:
+                        id: md_list
+                        MDList:
+                            OneLineListItem:
                                 text: "Screen 1"
-                                
-                        Screen:
-                            name: "screen2"
-                            MDLabel:
+                                on_press:
+                                    nav_drawer.set_state("close")
+                                    screen_manager.current = "screen1"
+                            OneLineListItem:
                                 text: "Screen 2"
-                                
-                    Widget:
-                    
-        MDNavigationDrawer:
-            id: nav_drawer
-            ScrollView:
-                MDList:
-                    OneLineListItem:
-                        text: "Screen 1"
-                        on_press:
-                            nav_drawer.set_state("close")
-                            screen_manager.current = "screen1"
-                    OneLineListItem:
-                        text: "Screen 2"
-                        on_press:
-                            nav_drawer.set_state("close")
-                            screen_manager.current = "screen2"
-        
-
-      
+                                on_press:
+                                    nav_drawer.set_state("close")
+                                    screen_manager.current = "screen2"
+                
+    
+          
 """
 
