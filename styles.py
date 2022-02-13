@@ -77,37 +77,48 @@ ScreenManager:
     name: 'nav_l'
     Screen:
     MDNavigationLayout:
+    
         ScreenManager:
+        
             Screen:
+            
                 BoxLayout:
                     orientation: 'vertical'
+                    
                     MDToolbar:
                         title: "Navigation Drawer"
                         elevation: 10
                         left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
+                        
                     ScreenManager:
+                    
                         id: screen_manager
                         Screen:
                             name: "screen1"
                             MDLabel:
                                 text: "Screen 1"
+                                
                         Screen:
                             name: "screen2"
                             MDLabel:
                                 text: "Screen 2"
+                                
                     Widget:
+                    
         MDNavigationDrawer:
             id: nav_drawer
-            OneLineListItem:
-                text: "Screen 1"
-                on_press:
-                    nav_drawer.set_state("close")
-                    screen_manager.current = "screen1"
-            OneLineListItem:
-                text: "Screen 2"
-                on_press:
-                    nav_drawer.set_state("close")
-                    screen_manager.current = "screen2"
+            ScrollView:
+                MDList:
+                    OneLineListItem:
+                        text: "Screen 1"
+                        on_press:
+                            nav_drawer.set_state("close")
+                            screen_manager.current = "screen1"
+                    OneLineListItem:
+                        text: "Screen 2"
+                        on_press:
+                            nav_drawer.set_state("close")
+                            screen_manager.current = "screen2"
         
 
       
