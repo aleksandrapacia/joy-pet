@@ -111,15 +111,24 @@ ScreenManager:
                 id: nav_drawer
                 ContentNavigationDrawer:
                     orientation: 'vertical'
+                    spacing: '8dp'
+                    padding: '8dp'
                     
                     Image:
                         id: avatar
-                        size_hint_y: 0.3
                         source: 'profile_img.png'
                         
-                    
+                    MDLabel:
+                        text: '                     Aleksandra Pacia'
+                        font_style: 'Subtitle1'
+                        size_hint_y: None
+                        height: self.texture_size[1]
                         
-    
+                    MDLabel:
+                        text: '                            username'
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        
                     ScrollView:
                         DrawerList:
                             id: md_list
@@ -149,6 +158,7 @@ ScreenManager:
                                     on_press:
                                         nav_drawer.set_state("close")
                                         screen_manager.current = "screen2"
+
                 
     
           
