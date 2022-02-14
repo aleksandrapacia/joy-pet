@@ -33,7 +33,7 @@ class JoyPet(MDApp):
     data = {
         'Start': 'alpha-s',
         'Updates': 'upload',
-        'language-cpp': 'C++',
+        'Login': 'login',
 
     }
 
