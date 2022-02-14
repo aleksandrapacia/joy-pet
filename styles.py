@@ -15,7 +15,7 @@ ScreenManager:
         pos_hint: {'center_x':0.5,'center_y':0.5}
         on_press: root.manager.current = 'nav_l'
     MDRectangleFlatButton:
-        text: 'Upload'
+        text: 'Updates'
         pos_hint: {'center_x':0.5,'center_y':0.4}
         on_press: root.manager.current = 'updatescreen'
     MDLabel:
