@@ -108,6 +108,11 @@ ScreenManager:
                                     
                                     
                         Widget:
+                            MDFloatingActionButtonSpeedDial:
+                                data: app.data
+                                rotation_root_button: True
+                                
+
                         
             MDNavigationDrawer:
                 id: nav_drawer

@@ -30,6 +30,11 @@ sm.add_widget(LoginScreen(name='loginscreen'))
 
 
 class JoyPet(MDApp):
+    data = {
+        'language-python': 'Python',
+        'language-php': 'PHP',
+        'language-cpp': 'C++',
+    }
 
     class ContentNavigationDrawer(BoxLayout):
         pass
