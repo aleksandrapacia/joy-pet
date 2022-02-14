@@ -32,7 +32,7 @@ sm.add_widget(LoginScreen(name='loginscreen'))
 class JoyPet(MDApp):
     data = {
         'Start': 'alpha-s',
-        'language-php': 'PHP',
+        'Updates': 'upload',
         'language-cpp': 'C++',
 
     }
