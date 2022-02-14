@@ -131,6 +131,21 @@ ScreenManager:
                                     on_press:
                                         nav_drawer.set_state("close")
                                         screen_manager.current = "screen2"
+                                OneLineListItem:
+                                    text: "Screen 2"
+                                    on_press:
+                                        nav_drawer.set_state("close")
+                                        screen_manager.current = "screen2"
+                                OneLineListItem:
+                                    text: "Screen 2"
+                                    on_press:
+                                        nav_drawer.set_state("close")
+                                        screen_manager.current = "screen2"
+                                OneLineListItem:
+                                    text: "Screen 2"
+                                    on_press:
+                                        nav_drawer.set_state("close")
+                                        screen_manager.current = "screen2"
                 
     
           
