@@ -95,9 +95,11 @@ ScreenManager:
                         
                             id: screen_manager
                             Screen:
-                                name: "screen1"
+                                name: "menu"
                                 MDLabel:
-                                    text: "Screen 1"
+                                    text: "Menu"
+                                Image:
+                                
                                     
                             Screen:
                                 name: "screen2"
@@ -134,10 +136,10 @@ ScreenManager:
                             id: md_list
                             MDList:
                                 OneLineListItem:
-                                    text: "Screen 1"
+                                    text: "Menu"
                                     on_press:
                                         nav_drawer.set_state("close")
-                                        screen_manager.current = "screen1"
+                                        screen_manager.current = "menu"
                                 OneLineListItem:
                                     text: "Screen 2"
                                     on_press:
