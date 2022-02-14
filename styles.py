@@ -114,7 +114,10 @@ ScreenManager:
                     
                     Image:
                         id: avatar
+                        size_hint_y: 0.3
                         source: 'profile_img.png'
+                        
+                    
                         
     
                     ScrollView:
