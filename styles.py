@@ -102,15 +102,16 @@ ScreenManager:
                                 
                                     
                             Screen:
-                                name: "screen2"
+                                name: "profile"
                                 MDLabel:
-                                    text: "Screen 2"
+                                    text: "Profile"
                                     
                                     
                         Widget:
                             MDFloatingActionButtonSpeedDial:
                                 data: app.data
                                 rotation_root_button: True
+
                                 
 
                         
@@ -146,7 +147,7 @@ ScreenManager:
                                         nav_drawer.set_state("close")
                                         screen_manager.current = "menu"
                                 OneLineListItem:
-                                    text: "Screen 2"
+                                    text: "Profile"
                                     on_press:
                                         nav_drawer.set_state("close")
                                         screen_manager.current = "screen2"
