@@ -113,6 +113,8 @@ ScreenManager:
                                 rotation_root_button: True
 
                                 
+                            
+                                
 
                         
             MDNavigationDrawer:
@@ -150,7 +152,7 @@ ScreenManager:
                                     text: "Profile"
                                     on_press:
                                         nav_drawer.set_state("close")
-                                        screen_manager.current = "screen2"
+                                        screen_manager.current = "profile"
                                 OneLineListItem:
                                     text: "Screen 2"
                                     on_press:
