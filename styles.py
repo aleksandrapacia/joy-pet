@@ -101,6 +101,8 @@ ScreenManager:
                                     name: '1'
                                     size: "200dp", "100dp"
                                     size_hint: None, None
+                                    border_radius: 20
+                                    radius: [15]
                                     
                                     pos_hint: {'center_x':.3, 'center_y': .5}
                                     md_bg_color: [1,1,0,1]
@@ -113,6 +115,8 @@ ScreenManager:
                                     name: '2'
                                     size: "200dp", "100dp"
                                     size_hint: None, None
+                                    border_radius: 20
+                                    radius: [15]
                                     
                                     pos_hint: {'center_x':.7, 'center_y': .5}
                                     md_bg_color: [1,1,0,1]
