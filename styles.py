@@ -53,7 +53,6 @@ ScreenManager:
         hint_text: 'Enter username'
         pos_hint:{'center_x': 0.5, 'center_y': 0.6}
         size_hint_x:None
-        
         width: 250
     MDTextField:
         mode: 'rectangle'
@@ -96,14 +95,32 @@ ScreenManager:
                             id: screen_manager
                             Screen:
                                 name: "menu"
-                                MDLabel:
-                                    text: "Menu"
+
 
                                 MDCard:
-                                    size_hint: (.6,.3)
-                                    pos_hint: {'center_x':0.6, 'center_y': 0.5}
-                                    md_bg_color: [1,0,0,1]
-                                    elevation: 40
+                                    name: '1'
+                                    size: "200dp", "100dp"
+                                    size_hint: None, None
+                                    
+                                    pos_hint: {'center_x':.3, 'center_y': .5}
+                                    md_bg_color: [1,1,0,1]
+                                    
+                                    MDLabel:
+                                        text: '1'
+                                        pos_hint: {'center_x': .8, 'center_y': .5}
+                                        
+                                MDCard:
+                                    name: '2'
+                                    size: "200dp", "100dp"
+                                    size_hint: None, None
+                                    
+                                    pos_hint: {'center_x':.7, 'center_y': .5}
+                                    md_bg_color: [1,1,0,1]
+                                    
+                                    MDLabel:
+                                        text: '2'
+                                        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                                        adaptive_size: True
                                         
                                     
                             Screen:
