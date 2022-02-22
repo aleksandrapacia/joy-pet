@@ -98,8 +98,13 @@ ScreenManager:
                                 name: "menu"
                                 MDLabel:
                                     text: "Menu"
-                                Image:
-                                
+
+                                MDCard:
+                                    size_hint: (.6,.3)
+                                    pos_hint: {'center_x':0.6, 'center_y': 0.5}
+                                    md_bg_color: [1,0,0,1]
+                                    elevation: 40
+                                        
                                     
                             Screen:
                                 name: "profile"
