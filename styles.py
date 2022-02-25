@@ -86,47 +86,17 @@ ScreenManager:
                         
                         MDToolbar:
                             title: "Navigation Drawer"
-                            elevation: 10
                             left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
                             
                             
                         ScreenManager:
-                        
                             id: screen_manager
                             Screen:
                                 name: "menu"
-
-
                                 MDCard:
-                                    name: '1'
-                                    size: "200dp", "100dp"
                                     size_hint: None, None
-                                    border_radius: 20
-                                    radius: [15]
-                                    
-                                    pos_hint: {'center_x':.3, 'center_y': .5}
-                                    md_bg_color: [1,1,0,1]
-                                    
-                                    MDLabel:
-                                        text: '1'
-                                        pos_hint: {'center_x': .8, 'center_y': .5}
-                                        
-                                MDCard:
-                                    name: '2'
-                                    size: "200dp", "100dp"
-                                    size_hint: None, None
-                                    border_radius: 20
-                                    radius: [15]
-                                    
-                                    pos_hint: {'center_x':.7, 'center_y': .5}
-                                    md_bg_color: [1,1,0,1]
-                                    
-                                    MDLabel:
-                                        text: '2'
-                                        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
-                                        adaptive_size: True
-                                        
-                                    
+                                    size: "280dp", "180dp"
+                                    pos_hint: {"center_x": .5, "center_y": .5}
                             Screen:
                                 name: "profile"
                                 MDLabel:
@@ -171,6 +141,7 @@ ScreenManager:
                             MDList:
                                 OneLineListItem:
                                     text: "Menu"
+                                
                                     on_press:
                                         nav_drawer.set_state("close")
                                         screen_manager.current = "menu"
@@ -178,25 +149,5 @@ ScreenManager:
                                     text: "Profile"
                                     on_press:
                                         nav_drawer.set_state("close")
-                                        screen_manager.current = "profile"
-                                OneLineListItem:
-                                    text: "Screen 2"
-                                    on_press:
-                                        nav_drawer.set_state("close")
-                                        screen_manager.current = "screen2"
-                                OneLineListItem:
-                                    text: "Screen 2"
-                                    on_press:
-                                        nav_drawer.set_state("close")
-                                        screen_manager.current = "screen2"
-                                OneLineListItem:
-                                    text: "Screen 2"
-                                    on_press:
-                                        nav_drawer.set_state("close")
-                                        screen_manager.current = "screen2"
-
-                
-    
-          
+              
 """
-
