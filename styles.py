@@ -85,19 +85,16 @@ ScreenManager:
                         orientation: 'vertical'
                         
                         MDToolbar:
-                            title: "Navigation Drawer"
+                            title: 'Navigation Drawer'
                             left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
-                            
                             
                         ScreenManager:
                             id: screen_manager
                             Screen:
                                 name: "menu"
-
-                                    
+                                
                                 ScrollView:
                                     size: self.size
-    
                                     MDGridLayout:
                                         cols: 2
                                         size_hint_y: None
@@ -122,21 +119,47 @@ ScreenManager:
                                             elevation: 5
                                             border_radius: 20
                                             radius: [15]
+                                        MDCard:
+                                            orientation: 'vertical'
+                                            padding: '8dp'
+                                            size_hint: 1, None
+                                            height: '210dp'
+                                            elevation: 5
+                                            border_radius: 20
+                                            radius: [15]
+                                        MDCard:
+                                            orientation: 'vertical'
+                                            padding: '8dp'
+                                            size_hint: 1, None
+                                            height: '210dp'
+                                            elevation: 5
+                                            border_radius: 20
+                                            radius: [15]
+                                        MDCard:
+                                            orientation: 'vertical'
+                                            padding: '8dp'
+                                            size_hint: 1, None
+                                            height: '210dp'
+                                            elevation: 5
+                                            border_radius: 20
+                                            radius: [15]
+                                        MDCard:
+                                            orientation: 'vertical'
+                                            padding: '8dp'
+                                            size_hint: 1, None
+                                            height: '210dp'
+                                            elevation: 5
+                                            border_radius: 20
+                                            radius: [15]
+                                        
                                         
                                     
                             Screen:
                                 name: "profile"
                                 MDLabel:
                                     text: "Profile"
-                                    
-                                    
-                        Widget:
-                            MDFloatingActionButtonSpeedDial:
-                                data: app.data
-                                rotation_root_button: True
-
                                 
-                            
+                        
                                 
 
                         
