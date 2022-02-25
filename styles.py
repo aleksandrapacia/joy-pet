@@ -93,10 +93,37 @@ ScreenManager:
                             id: screen_manager
                             Screen:
                                 name: "menu"
-                                MDCard:
-                                    size_hint: None, None
-                                    size: "280dp", "180dp"
-                                    pos_hint: {"center_x": .5, "center_y": .5}
+
+                                    
+                                ScrollView:
+                                    size: self.size
+    
+                                    MDGridLayout:
+                                        cols: 2
+                                        size_hint_y: None
+                                        height: self.minimum_height
+                                        width: self.minimum_width
+                                        spacing: '20dp'
+                                        padding: '20dp'
+                                        
+                                        MDCard:
+                                            orientation: 'vertical'
+                                            padding: '8dp'
+                                            size_hint: 1, None
+                                            height: '210dp'
+                                            elevation: 5
+                                            border_radius: 20
+                                            radius: [15]
+                                        MDCard:
+                                            orientation: 'vertical'
+                                            padding: '8dp'
+                                            size_hint: 1, None
+                                            height: '210dp'
+                                            elevation: 5
+                                            border_radius: 20
+                                            radius: [15]
+                                        
+                                    
                             Screen:
                                 name: "profile"
                                 MDLabel:
