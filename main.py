@@ -6,6 +6,9 @@ from kivymd.theming import ThemeManager
 from kivy.uix.boxlayout import BoxLayout
 from kivymd.uix.list import MDList
 from kivymd.theming import ThemableBehavior
+from kivy.uix.gridlayout import GridLayout
+from kivymd.uix.card import MDCard
+from kivy.core.text import LabelBase
 
 
 class Start(Screen):
@@ -43,21 +46,23 @@ class JoyPet(MDApp):
     class DrawerList(ThemableBehavior, MDList):
         pass
 
-
+#Quicksand-VariableFont_wght.ttf
     def build(self):
         theme_cls = ThemeManager
         screen = Builder.load_string(screen_management)
         self.title = 'JoyPet'
         self.theme_cls.primary_palette = "DeepOrange"
         self.theme_cls.primary_hue = "500"
+        LabelBase.register(name='Quicksand',
+                           fn_regular='//Users//olapa//Desktop//fonts//Quicksand//Quicksand-VariableFont_wght.ttf')
 
         return screen
 
-    def navigation_draw(self):
-        print("NavBar")
 
     def on_start(self):
         pass
+
+
 
 
 JoyPet().run()

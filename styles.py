@@ -111,6 +111,12 @@ ScreenManager:
                                             elevation: 5
                                             border_radius: 20
                                             radius: [15]
+                                            MDLabel:
+                                                text: 'About us'
+                                                font_name: 'Quicksand'
+                                                font_size: 20
+                                                    
+                                        
                                         MDCard:
                                             orientation: 'vertical'
                                             padding: '8dp'
