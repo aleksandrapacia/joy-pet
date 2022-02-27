@@ -124,10 +124,7 @@ ScreenManager:
                                             Image:
                                                 source: 'images/vector_aboutus.png'
                                                 size: self.texture_size
-                                                    
                                                 
-                                                    
-                                        
                                         MDCard:
                                             orientation: 'vertical'
                                             padding: '8dp'
@@ -135,7 +132,19 @@ ScreenManager:
                                             height: '210dp'
                                             elevation: 5
                                             border_radius: 20
-                                            radius: [15]
+                                            on_press: root.manager.current = 'aboutus_screen'
+                                            MDLabel:
+                                                text: 'Contact'
+                                                font_name: 'Quicksand'
+                                                font_size: 20
+                                                halign: 'center'
+                                                size_hint_y: .2
+                                                
+                                                pos_hint: {'center_x':.5, 'center_y':0.9}
+                                            Image:
+                                                source: 'images/contact.png'
+                                                size: self.texture_size
+                                                    
                                         MDCard:
                                             orientation: 'vertical'
                                             padding: '8dp'
