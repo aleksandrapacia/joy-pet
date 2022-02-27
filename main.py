@@ -51,8 +51,8 @@ class JoyPet(MDApp):
         theme_cls = ThemeManager
         screen = Builder.load_string(screen_management)
         self.title = 'JoyPet'
-        self.theme_cls.primary_palette = "DeepOrange"
-        self.theme_cls.primary_hue = "500"
+        self.theme_cls.primary_palette = "Teal"
+        self.theme_cls.primary_hue = "100"
         LabelBase.register(name='Quicksand',
                            fn_regular='//Users//olapa//Desktop//fonts//Quicksand//Quicksand-VariableFont_wght.ttf')
 
