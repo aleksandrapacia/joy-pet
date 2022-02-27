@@ -24,12 +24,16 @@ class UpdatesScreen(Screen):
 class LoginScreen(Screen):
     pass
 
+class AboutUs(Screen):
+    pass
+
 
 sm = ScreenManager()
 sm.add_widget(Start(name='mainbtn'))
 sm.add_widget(MenuScreen(name='nav_l'))
 sm.add_widget(UpdatesScreen(name='updatescreen'))
 sm.add_widget(LoginScreen(name='loginscreen'))
+sm.add_widget(LoginScreen(name='aboutus_screen'))
 
 
 class JoyPet(MDApp):

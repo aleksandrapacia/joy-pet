@@ -5,6 +5,7 @@ ScreenManager:
     MenuScreen:
     UpdatesScreen:
     LoginScreen:
+    AboutUs:
     
 
 
@@ -111,8 +112,7 @@ ScreenManager:
                                             elevation: 5
                                             border_radius: 20
                                             radius: [15]
-                                            color: 
-                                            #on_press
+                                            on_press: root.manager.current = 'aboutus_screen'
                                             MDLabel:
                                                 text: 'About us'
                                                 font_name: 'Quicksand'
@@ -214,5 +214,16 @@ ScreenManager:
                                     text: "Profile"
                                     on_press:
                                         nav_drawer.set_state("close")
-              
+                                        
+<AboutUs>:
+    name: 'aboutus_screen'
+    MDLabel:
+        text: 'About us'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+        font_size: '80sp'
+        halign: 'center'
+        font_name: 'Quicksand'
+        bold: True
+    
+   
 """
