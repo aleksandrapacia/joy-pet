@@ -117,7 +117,9 @@ ScreenManager:
                                                 text: 'About us'
                                                 font_name: 'Quicksand'
                                                 font_size: 20
+                                                halign: 'center'
                                                 size_hint_y: .2
+                                                
                                                 pos_hint: {'center_x':.5, 'center_y':0.9}
                                             Image:
                                                 source: 'images/vector_aboutus.png'
