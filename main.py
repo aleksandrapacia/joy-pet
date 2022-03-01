@@ -27,6 +27,9 @@ class LoginScreen(Screen):
 class AboutUs(Screen):
     pass
 
+class ContactScreen(Screen):
+    pass
+
 
 sm = ScreenManager()
 sm.add_widget(Start(name='mainbtn'))
@@ -34,6 +37,7 @@ sm.add_widget(MenuScreen(name='nav_l'))
 sm.add_widget(UpdatesScreen(name='updatescreen'))
 sm.add_widget(LoginScreen(name='loginscreen'))
 sm.add_widget(LoginScreen(name='aboutus_screen'))
+sm.add_widget(ContactScreen(name='contact_screen'))
 
 
 class JoyPet(MDApp):

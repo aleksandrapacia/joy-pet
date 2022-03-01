@@ -6,6 +6,7 @@ ScreenManager:
     UpdatesScreen:
     LoginScreen:
     AboutUs:
+    ContactScreen:
     
 
 
@@ -132,7 +133,7 @@ ScreenManager:
                                             height: '210dp'
                                             elevation: 5
                                             border_radius: 20
-                                            on_press: root.manager.current = 'aboutus_screen'
+                                            on_press: root.manager.current = 'contact_screen'
                                             MDLabel:
                                                 text: 'Contact'
                                                 font_name: 'Quicksand'
@@ -243,5 +244,7 @@ ScreenManager:
         icon_color: app.theme_cls.primary_color
         on_press: root.manager.current = 'nav_l'
     
+<ContactScreen>:
+    name: 'contact_screen'
    
 """
