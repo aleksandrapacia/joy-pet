@@ -144,6 +144,8 @@ ScreenManager:
                                             Image:
                                                 source: 'images/contact.png'
                                                 size: self.texture_size
+                                                halign: 'center'
+                                                pos_hint: {'center_x': 0.5, 'center_y':0.2}
                                                     
                                         MDCard:
                                             orientation: 'vertical'
@@ -235,6 +237,10 @@ ScreenManager:
         halign: 'center'
         font_name: 'Quicksand'
         bold: True
+    MDIconButton:
+        icon: 'android'
+        theme_icon_color: "Custom"
+        icon_color: app.theme_cls.primary_color
     
    
 """
