@@ -246,5 +246,17 @@ ScreenManager:
     
 <ContactScreen>:
     name: 'contact_screen'
+    MDLabel:
+        text: 'Contact'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+        font_size: '80sp'
+        halign: 'center'
+        font_name: 'Quicksand'
+        bold: True
+    MDIconButton:
+        icon: 'arrow-collapse-left'
+        theme_icon_color: 'Custom'
+        icon_color: app.theme_cls.primary_color
+        on_press: root.manager.current = 'nav_l'
    
 """
