@@ -241,6 +241,7 @@ ScreenManager:
         icon: 'arrow-collapse-left'
         theme_icon_color: 'Custom'
         icon_color: app.theme_cls.primary_color
+        on_press: root.manager.current = 'nav_l'
     
    
 """
