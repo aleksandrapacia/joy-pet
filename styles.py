@@ -238,8 +238,8 @@ ScreenManager:
         font_name: 'Quicksand'
         bold: True
     MDIconButton:
-        icon: 'android'
-        theme_icon_color: "Custom"
+        icon: 'arrow-collapse-left'
+        theme_icon_color: 'Custom'
         icon_color: app.theme_cls.primary_color
     
    
