@@ -152,8 +152,20 @@ ScreenManager:
                                     
                             Screen:
                                 name: "profile"
-                                MDLabel:
-                                    text: "Profile"
+                                MDFloatLayout:
+                                    md_bg_color: 1, 1, 1, 1
+                                    MDFloatLayout:
+                                        size_hint_x: 1
+                                        size_hint_y: 0.9
+                                        pos_hint: {'center_x': .5, 'center_y': .85}
+                                        canvas:
+                                            Color:
+                                                rgb: (1,1,1,1)
+                                            Rectangle: 
+                                                size: self.size
+                                                pos: self.pos
+                                                source: 'images/background.jpg'
+                                                
                                 
                         
                                 
@@ -195,6 +207,8 @@ ScreenManager:
                                     text: "Profile"
                                     on_press:
                                         nav_drawer.set_state("close")
+                                        screen_manager.current = "profile"
+
                                         
 <AboutUs>:
     name: 'aboutus_screen'
