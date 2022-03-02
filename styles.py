@@ -148,40 +148,6 @@ ScreenManager:
                                                 halign: 'center'
                                                 pos_hint: {'center_x': 0.5, 'center_y':0.2}
                                                     
-                                        MDCard:
-                                            orientation: 'vertical'
-                                            padding: '8dp'
-                                            size_hint: 1, None
-                                            height: '210dp'
-                                            elevation: 5
-                                            border_radius: 20
-                                            radius: [15]
-                                        MDCard:
-                                            orientation: 'vertical'
-                                            padding: '8dp'
-                                            size_hint: 1, None
-                                            height: '210dp'
-                                            elevation: 5
-                                            border_radius: 20
-                                            radius: [15]
-                                        MDCard:
-                                            orientation: 'vertical'
-                                            padding: '8dp'
-                                            size_hint: 1, None
-                                            height: '210dp'
-                                            elevation: 5
-                                            border_radius: 20
-                                            radius: [15]
-                                        MDCard:
-                                            orientation: 'vertical'
-                                            padding: '8dp'
-                                            size_hint: 1, None
-                                            height: '210dp'
-                                            elevation: 5
-                                            border_radius: 20
-                                            radius: [15]
-                                        
-                                        
                                     
                             Screen:
                                 name: "profile"
