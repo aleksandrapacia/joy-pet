@@ -133,6 +133,7 @@ ScreenManager:
                                             height: '210dp'
                                             elevation: 5
                                             border_radius: 20
+                                            radius: [15]
                                             on_press: root.manager.current = 'contact_screen'
                                             MDLabel:
                                                 text: 'Contact'
