@@ -165,6 +165,17 @@ ScreenManager:
                                                 size: self.size
                                                 pos: self.pos
                                                 source: 'images/background.jpg'
+                                    MDFloatLayout:
+                                        size_hint_x: .265
+                                        size_hint_y: .265
+                                        pos_hint: {'center_x':.5, 'center_y': .7}
+                                        canvas:
+                                            Color:
+                                                rgb: (1,1,1,1)
+                                            Ellipse:
+                                                size: self.size
+                                                pos: self.pos
+                                                source: 'images/ugly.jpg'
                                                 
                                 
                         
