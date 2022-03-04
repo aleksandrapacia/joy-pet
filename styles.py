@@ -156,7 +156,7 @@ ScreenManager:
                                     md_bg_color: 1, 1, 1, 1
                                     MDFloatLayout:
                                         size_hint_x: 1
-                                        size_hint_y: 0.9
+                                        size_hint_y: .33
                                         pos_hint: {'center_x': .5, 'center_y': .85}
                                         canvas:
                                             Color:
@@ -166,8 +166,8 @@ ScreenManager:
                                                 pos: self.pos
                                                 source: 'images/background.jpg'
                                     MDFloatLayout:
-                                        size_hint_x: .265
-                                        size_hint_y: .265
+                                        size_hint_x: .20
+                                        size_hint_y: .20
                                         pos_hint: {'center_x':.5, 'center_y': .7}
                                         canvas:
                                             Color:
@@ -176,7 +176,7 @@ ScreenManager:
                                                 size: self.size
                                                 pos: self.pos
                                                 source: 'images/ugly.jpg'
-                                                
+                                                                
                                 
                         
                                 
