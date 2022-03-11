@@ -166,15 +166,18 @@ ScreenManager:
                                                 pos: self.pos
                                                 source: 'images/background.jpg'
                                     MDFloatLayout:
-                                        size_hint_x: .20
-                                        size_hint_y: .20
-                                        pos_hint: {'center_x':.5, 'center_y': .7}
+                                        size_hint_x: .28
+                                        size_hint_y: .30
+                                        pos_hint: {'center_x':.5, 'center_y': .6}
                                         canvas:
                                             Color:
                                                 rgb: (1,1,1,1)
                                             Ellipse:
-                                                size: self.size
+                                                size: 200 , 200
                                                 pos: self.pos
+                                                angle_start: 0
+                                                angle_end: 360
+
                                                 source: 'images/ugly.jpg'
                                                                 
                                 
